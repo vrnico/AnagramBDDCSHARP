@@ -9,9 +9,11 @@ namespace Anagram.Tests
     [TestMethod]
     public void Anagram_SetWord_ReturnWord()
     {
-      AnagramGenerator testAnagram = new AnagramGenerator();
-      Assert.AreEqual("evil", testAnagram.Anagram("evil"));
+      string word = "evil";
+      AnagramGenerator newAnagramGenerator = new AnagramGenerator(word);
+      string newWord = newAnagramGenerator.GetWord();
 
+      Assert.AreEqual(word, newWord);
 
     }
   }
