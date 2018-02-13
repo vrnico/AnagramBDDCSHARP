@@ -1,3 +1,7 @@
+
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Anagram;
 
@@ -19,7 +23,21 @@ namespace Anagram.Tests
 
       Assert.AreEqual(word, newWord);
       Assert.AreEqual(listCheck, newListCheck);
+    }
 
+    [TestMethod]
+    public void SeperateListCheck_ReturnNewList()
+    {
+      string word = "evil";
+      string listCheck = "big boy";
+      List<string> test = new List<string> {"big", "boy"};
+    AnagramGenerator newAnagramGenerator = new AnagramGenerator(word, listCheck);
+
+    newAnagramGenerator.BreakString();
+    List<string> newList = new List<string> {};
+    newList = newAnagramGenerator.GetCompareList();
+
+    CollectionAssert.AreEqual(newList, test);
     }
   }
 }
