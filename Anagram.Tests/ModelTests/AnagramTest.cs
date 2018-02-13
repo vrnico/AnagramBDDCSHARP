@@ -39,5 +39,14 @@ namespace Anagram.Tests
 
     CollectionAssert.AreEqual(newList, test);
     }
+
+    [TestMethod]
+    public void BreakWordIntoChar_ReturnCharList()
+    {
+      string word = "evil";
+      string listCheck = "big boy";
+      Assert.AreEqual(listCheck, word);
+
+    }
   }
 }
