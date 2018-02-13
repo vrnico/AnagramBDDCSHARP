@@ -1,0 +1,8 @@
+/Users/Guest/Desktop/Template.Solution/Template/bin/Debug/netcoreapp1.1/Template.deps.json
+/Users/Guest/Desktop/Template.Solution/Template/bin/Debug/netcoreapp1.1/Template.runtimeconfig.json
+/Users/Guest/Desktop/Template.Solution/Template/bin/Debug/netcoreapp1.1/Template.runtimeconfig.dev.json
+/Users/Guest/Desktop/Template.Solution/Template/bin/Debug/netcoreapp1.1/Template.dll
+/Users/Guest/Desktop/Template.Solution/Template/bin/Debug/netcoreapp1.1/Template.pdb
+/Users/Guest/Desktop/Template.Solution/Template/obj/Debug/netcoreapp1.1/Template.AssemblyInfo.cs
+/Users/Guest/Desktop/Template.Solution/Template/obj/Debug/netcoreapp1.1/Template.dll
+/Users/Guest/Desktop/Template.Solution/Template/obj/Debug/netcoreapp1.1/Template.pdb
