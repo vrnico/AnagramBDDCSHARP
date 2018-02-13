@@ -7,9 +7,12 @@ namespace Anagram.Tests
   public class AnagramTest
   {
     [TestMethod]
-    public void IsAnagram_NumberDivisibleByFour_True()
+    public void Anagram_SetWord_ReturnWord()
     {
-      // eventually your testing code will go here
+      AnagramGenerator testAnagram = new AnagramGenerator();
+      Assert.AreEqual("evil", testAnagram.Anagram("evil"));
+
+
     }
   }
 }
