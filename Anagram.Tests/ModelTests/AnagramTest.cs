@@ -45,7 +45,14 @@ namespace Anagram.Tests
     {
       string word = "evil";
       string listCheck = "big boy";
-      Assert.AreEqual(listCheck, word);
+      List<string> charList = new List<string> { "e", "v", "i", "l"};
+      AnagramGenerator newAnagramGenerator = new AnagramGenerator (word, listCheck);
+
+      List<string> newList = new List<string> {};
+      newAnagramGenerator.CreateCharList();
+      newList = newAnagramGenerator.GetWordCharList();
+
+      CollectionAssert.AreEqual(charList, newList);
 
     }
   }
