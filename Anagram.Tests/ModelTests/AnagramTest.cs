@@ -60,8 +60,22 @@ namespace Anagram.Tests
     public void BreakListIntoCharList_ReturnListofCharLists()
     {
       string word = "evil";
-      string listCheck = "big boy";
-      Assert.AreEqual(word, listCheck);
+      string listCheck = "big boy butts";
+      List<string> big = new List<string> {"b", "i", "g"};
+      List<string> boy = new List<string> {"b", "o", "y"};
+      List<string> butts = new List<string> {"b", "u", "t", "t", "s"};
+      List<List<string>> listOfCharLists = new List<List<string>>() {big, boy, butts};
+      AnagramGenerator newAnagramGenerator = new AnagramGenerator (word, listCheck);
+
+      List<List<string>> newListOfLists = new List<List<string>> {};
+      newAnagramGenerator.BreakString();
+      // newAnagramGenerator.SplitCompareList();
+      newListOfLists = newAnagramGenerator.GetSplitCompareList();
+
+      for (int index = 0; index < newListOfLists.Count; index++)
+      {
+        CollectionAssert.AreEqual(listOfCharLists[index], newListOfLists[index]);
+      }
     }
   }
 }
